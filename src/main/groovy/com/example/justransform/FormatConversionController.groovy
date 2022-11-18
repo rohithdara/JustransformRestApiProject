@@ -6,9 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 
-
-
-
 @RestController
 class FormatConversionController {
 
@@ -30,7 +27,7 @@ class FormatConversionController {
             def json = new JsonBuilder(jsonObject)
             return new HttpResponse(200, json.toString())
         } catch (Exception _) {
-            return new  HttpResponse(400, content + " is not a valid XML expression")
+            return new HttpResponse(400, content + " is not a valid XML expression")
         }
     }
 

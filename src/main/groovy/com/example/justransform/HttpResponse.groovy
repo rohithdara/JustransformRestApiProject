@@ -12,4 +12,12 @@ class HttpResponse {
         this.status = status
         this.body = body
     }
+
+    int getStatus() {
+        return status
+    }
+
+    String getBody() {
+        return body
+    }
 }
