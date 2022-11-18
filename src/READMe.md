@@ -18,6 +18,7 @@ Send a GET request to `localhost:8080/convert`
 The body should be properly formatted xml.
 
 ====================================================================================
+
 Examples of proper request bodies and their expected return:
 Request Body:
 ```xml
@@ -129,10 +130,14 @@ Corresponding Well Formatted Return JSON:
 
 Examples of improper request bodies and their expected return:
 Request Body (not XML format):
-`Improper XML input`
+```xml
+Improper XML input
+```
 
 Return Body:
+```xml
 Status: 400. The following is not a valid XML expression: Improper XML input
+```
 
 Request Body (no closing Tag on a child node):
 ```xml
