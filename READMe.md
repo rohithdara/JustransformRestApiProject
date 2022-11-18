@@ -1,6 +1,8 @@
 This simple project hosts a REST API to send XML with a GET Request and return the JSON conversion of the request's XML.
 
-To run this program:
+To run this project:
+
+Clone the repository to a desired directory.
 
 Open up the project folder in IntelliJ Community Edition
 
